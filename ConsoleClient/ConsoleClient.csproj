@@ -14,7 +14,8 @@
     <!-- ServiceUriReference Include="https://msswagger/service/viewspec/1c9ae539-aba7-46c2-946e-3b36e0a1be39?fileName=ce_azure_cloudes_azuremonitor.json"
         CodeGenerator="NSwagTypeScript" / -->
     <ServiceUriReference Include="https://docs.oracle.com/en/cloud/paas/content-cloud/rest-api-documents/swagger.json"
-        CodeGenerator="NSwagCSharp" />
+        CodeGenerator="NSwagCSharp"
+        DocumentPath="rest-api-documents/swagger.json" />
     <ServiceFileReference Include="files/ce_azure_cloudes_azuremonitor.json" CodeGenerator="NSwagTypeScript" />
     <ServiceFileReference Include="files/swagger.json" CodeGenerator="NSwagTypeScript" />
   </ItemGroup>
