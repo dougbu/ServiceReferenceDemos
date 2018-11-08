@@ -22,10 +22,10 @@ namespace NETCORE_21
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddSwagger()
+                .AddSwaggerDocument(settings => settings.DefaultEnumHandling = EnumHandling.String)
                 .AddSwaggerGen(options =>
                 {
-                    //options.DescribeAllEnumsAsStrings();
+                    options.DescribeAllEnumsAsStrings();
                     options.SwaggerDoc("swashbuckle", new Info());
                 })
                 .AddMvc()
@@ -41,12 +41,7 @@ namespace NETCORE_21
             }
 
             app
-                .UseSwaggerWithApiExplorer(settings => settings.SwaggerRoute = "/nswagApiExplorer.json")
-                .UseSwaggerWithApiExplorer(settings =>
-                {
-                    settings.GeneratorSettings.DefaultEnumHandling = EnumHandling.String;
-                    settings.SwaggerRoute = "/nswagApiExplorerString.json";
-                })
+                .UseSwagger(settings => settings.PostProcess = null)
                 .UseSwagger(options => options.RouteTemplate = "/{documentName}.json")
                 .Map("/basePath", application => application.UseMvc());
         }
