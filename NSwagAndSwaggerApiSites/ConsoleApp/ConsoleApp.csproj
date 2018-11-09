@@ -109,5 +109,16 @@
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
       <DocumentPath>Template21_TS.json</DocumentPath>
     </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.2.100/Template22/Template22.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>Template22</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.2.100/Template22/Template22.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <DocumentPath>Template22_Net.json</DocumentPath>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+      <TargetFramework>net461</TargetFramework>
+    </ServiceProjectReference>
   </ItemGroup>
 </Project>
