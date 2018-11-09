@@ -1,4 +1,4 @@
-﻿namespace ClientConsole
+﻿namespace ConsoleApp
 {
     public partial class Client
     {

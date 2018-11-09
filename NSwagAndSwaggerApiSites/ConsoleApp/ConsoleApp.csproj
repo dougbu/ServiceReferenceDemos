@@ -6,5 +6,108 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NSwag.MSBuild.CodeGeneration" Version="12.21.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+
+    <ServiceFileReference Include="../2.1.202/NET_20/swashbuckleString.json">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>SwashbuckleString20</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.202/NET_20/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>SwashbuckleString20</ClassName>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>SwashbuckleStringCore20</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>SwashbuckleStringCore20</ClassName>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/NET_21/swashbuckleString.json">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>SwashbuckleString21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/NET_21/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>SwashbuckleString21</ClassName>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>SwashbuckleStringCore21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>SwashbuckleStringCore21</ClassName>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/Template21/swashbuckleString.json">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>SwashbuckleStringTemplate21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceFileReference>
+    <ServiceFileReference Include="../2.1.302/Template21/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>SwashbuckleStringTemplate21</ClassName>
+    </ServiceFileReference>
+
+    <ServiceProjectReference Include="../2.1.202/NET_20/NET_20.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>NET_20</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.202/NET_20/NET_20.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <DocumentPath>NET_20_TS.json</DocumentPath>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.202/NETCORE_20/NETCORE_20.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>NETCORE_20</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.202/NETCORE_20/NETCORE_20.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <DocumentPath>NETCORE_20_TS.json</DocumentPath>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/NET_21/NET_21.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>NET_21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/NET_21/NET_21.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <DocumentPath>NET_21_TS.json</DocumentPath>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/NETCORE_21/NETCORE_21.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>NETCORE_21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/NETCORE_21/NETCORE_21.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <DocumentPath>NETCORE_21_TS.json</DocumentPath>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/Template21/Template21.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <ClassName>Template21</ClassName>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/Template21/Template21.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <DocumentGenerator>NSwag</DocumentGenerator>
+      <DocumentPath>Template21_NSwag_Tool.json</DocumentPath>
+      <GenerateNSwagDocumentOptions>/DefaultEnumHandling:string</GenerateNSwagDocumentOptions>
+      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /ExcludedTypeNames:Model</GenerateNSwagCSharpOptions>
+    </ServiceProjectReference>
+    <ServiceProjectReference Include="../2.1.302/Template21/Template21.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <DocumentPath>Template21_TS.json</DocumentPath>
+    </ServiceProjectReference>
   </ItemGroup>
 </Project>
