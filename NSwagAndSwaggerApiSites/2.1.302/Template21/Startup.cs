@@ -26,7 +26,7 @@ namespace Template21
                 .AddSwaggerGen(options =>
                 {
                     options.DescribeAllEnumsAsStrings();
-                    options.SwaggerDoc("swashbuckle", new Info { Title = "title is required", Version = "and so is version" });
+                    options.SwaggerDoc("swashbuckleString", new Info { Title="swashbuckleString", Version="v1" });
                 })
                 .AddMvc()
                 .AddXmlDataContractSerializerFormatters()

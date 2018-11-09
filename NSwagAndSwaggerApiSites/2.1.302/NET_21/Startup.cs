@@ -26,7 +26,7 @@ namespace NET_21
                 .AddSwaggerGen(options =>
                 {
                     options.DescribeAllEnumsAsStrings();
-                    options.SwaggerDoc("swashbuckle", new Info());
+                    options.SwaggerDoc("swashbuckleString", new Info { Title="swashbuckleString", Version="v1" });
                 })
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

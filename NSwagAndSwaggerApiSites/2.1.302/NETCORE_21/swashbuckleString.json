@@ -1,6 +1,9 @@
 {
     "swagger": "2.0",
-    "info": {},
+    "info": {
+      "title": "swashbuckleString",
+      "version": "v1"
+    },
     "paths": {
         "/api/Values/matches": {
             "post": {
