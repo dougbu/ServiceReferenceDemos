@@ -1,0 +1,170 @@
+{
+  "x-generator": "NSwag v12.21.2.0 (NJsonSchema v9.12.0.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "My Title",
+    "version": "1.0.0"
+  },
+  "consumes": [
+    "application/xml",
+    "application/*+xml"
+  ],
+  "paths": {
+    "/api/Values/matches": {
+      "post": {
+        "tags": [
+          "Values"
+        ],
+        "operationId": "Values_Matches",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "parameters": [
+          {
+            "type": "array",
+            "name": "possibilities",
+            "in": "query",
+            "collectionFormat": "multi",
+            "x-nullable": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          {
+            "type": "string",
+            "name": "comparisonType",
+            "in": "query",
+            "x-schema": {
+              "$ref": "#/definitions/StringComparison"
+            },
+            "x-nullable": false,
+            "enum": [
+              "CurrentCulture",
+              "CurrentCultureIgnoreCase",
+              "InvariantCulture",
+              "InvariantCultureIgnoreCase",
+              "Ordinal",
+              "OrdinalIgnoreCase"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Values": {
+      "get": {
+        "tags": [
+          "Values"
+        ],
+        "operationId": "Values_Get",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Values"
+        ],
+        "operationId": "Values_Post",
+        "consumes": [
+          "application/xml",
+          "application/*+xml"
+        ],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/Values/too": {
+      "get": {
+        "tags": [
+          "Values"
+        ],
+        "operationId": "Values_GetToo",
+        "produces": [
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/Model"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "StringComparison": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "CurrentCulture",
+        "CurrentCultureIgnoreCase",
+        "InvariantCulture",
+        "InvariantCultureIgnoreCase",
+        "Ordinal",
+        "OrdinalIgnoreCase"
+      ],
+      "enum": [
+        "CurrentCulture",
+        "CurrentCultureIgnoreCase",
+        "InvariantCulture",
+        "InvariantCultureIgnoreCase",
+        "Ordinal",
+        "OrdinalIgnoreCase"
+      ]
+    },
+    "Model": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "UserName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
