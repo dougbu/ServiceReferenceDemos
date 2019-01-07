@@ -11,8 +11,8 @@
     </PackageReference>
 
     <ServiceProjectReference Include="../2.2.100/Template22/Template22.csproj">
-      <CodeGenerator>NSwagCSharp</CodeGenerator>
-      <ClassName>Template22</ClassName>
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <ClassName>FowlerIsAmazing</ClassName>
     </ServiceProjectReference>
   </ItemGroup>
 </Project>
