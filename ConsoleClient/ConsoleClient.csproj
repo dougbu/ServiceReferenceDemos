@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NSwag.MSBuild.CodeGeneration" Version="12.5.10">
+    <PackageReference Include="NSwag.ApiDescription.Design" Version="12.5.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

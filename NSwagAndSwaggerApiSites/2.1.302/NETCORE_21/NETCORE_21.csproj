@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.2" />
-    <PackageReference Include="NSwag.AspNetCore" Version="12.21.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="12.5.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0-beta" />
   </ItemGroup>
 </Project>

@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NJsonSchema;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using NSwag.AspNetCore;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace NET_21
 {
@@ -21,12 +22,19 @@ namespace NET_21
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var serializerSettings = new JsonSerializerSettings
+            {
+                Converters = { new StringEnumConverter() },
+            };
+
             services
-                .AddSwaggerDocument(settings => settings.DefaultEnumHandling = EnumHandling.String)
+                .AddSwaggerDocument(settings => settings.SerializerSettings = serializerSettings)
                 .AddSwaggerGen(options =>
                 {
                     options.DescribeAllEnumsAsStrings();
-                    options.SwaggerDoc("swashbuckleString", new Info { Title="swashbuckleString", Version="v1" });
+                    options.SwaggerDoc(
+                        "swashbuckleString",
+                        new OpenApiInfo { Title = "swashbuckleString", Version = "v1" });
                 })
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

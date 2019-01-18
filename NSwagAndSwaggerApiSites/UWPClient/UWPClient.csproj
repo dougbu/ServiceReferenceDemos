@@ -156,7 +156,7 @@
     </PackageReference>
 
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="NSwag.MSBuild.CodeGeneration" Version="12.21.2">
+    <PackageReference Include="NSwag.ApiDescription.Design" Version="12.5.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
