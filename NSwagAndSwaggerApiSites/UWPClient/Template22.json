@@ -1,12 +1,13 @@
 {
-  "x-generator": "NSwag v12.21.2.0 (NJsonSchema v9.12.0.0 (Newtonsoft.Json v11.0.0.0))",
+  "x-generator": "NSwag v12.5.10.0 (NJsonSchema v9.13.16.0 (Newtonsoft.Json v11.0.0.0))",
   "swagger": "2.0",
   "info": {
     "title": "My Title",
     "version": "1.0.0"
   },
   "consumes": [
-    "application/xml"
+    "application/xml",
+    "application/*+xml"
   ],
   "paths": {
     "/api/Values/matches": {
@@ -34,7 +35,7 @@
             }
           },
           {
-            "type": "string",
+            "type": "integer",
             "name": "comparisonType",
             "in": "query",
             "x-schema": {
@@ -42,12 +43,12 @@
             },
             "x-nullable": false,
             "enum": [
-              "CurrentCulture",
-              "CurrentCultureIgnoreCase",
-              "InvariantCulture",
-              "InvariantCultureIgnoreCase",
-              "Ordinal",
-              "OrdinalIgnoreCase"
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
             ]
           }
         ],
@@ -93,7 +94,8 @@
         ],
         "operationId": "Values_Post",
         "consumes": [
-          "application/xml"
+          "application/xml",
+          "application/*+xml"
         ],
         "parameters": [
           {
@@ -136,7 +138,7 @@
   },
   "definitions": {
     "StringComparison": {
-      "type": "string",
+      "type": "integer",
       "description": "",
       "x-enumNames": [
         "CurrentCulture",
@@ -147,19 +149,19 @@
         "OrdinalIgnoreCase"
       ],
       "enum": [
-        "CurrentCulture",
-        "CurrentCultureIgnoreCase",
-        "InvariantCulture",
-        "InvariantCultureIgnoreCase",
-        "Ordinal",
-        "OrdinalIgnoreCase"
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
       ]
     },
     "Model": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "UserName": {
+        "userName": {
           "type": "string"
         }
       }

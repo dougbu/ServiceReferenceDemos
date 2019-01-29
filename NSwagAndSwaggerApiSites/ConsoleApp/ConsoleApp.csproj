@@ -57,24 +57,6 @@
       <ClassName>SwashbuckleStringTemplate21</ClassName>
     </ServiceFileReference>
 
-    <ServiceProjectReference Include="../2.1.202/NET_20/NET_20.csproj">
-      <CodeGenerator>NSwagCSharp</CodeGenerator>
-      <ClassName>NET_20</ClassName>
-      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
-    </ServiceProjectReference>
-    <ServiceProjectReference Include="../2.1.202/NET_20/NET_20.csproj">
-      <CodeGenerator>NSwagTypeScript</CodeGenerator>
-      <DocumentPath>NET_20_TS.json</DocumentPath>
-    </ServiceProjectReference>
-    <ServiceProjectReference Include="../2.1.202/NETCORE_20/NETCORE_20.csproj">
-      <CodeGenerator>NSwagCSharp</CodeGenerator>
-      <ClassName>NETCORE_20</ClassName>
-      <GenerateNSwagCSharpOptions>/GenerateExceptionClasses:false /GenerateDtoTypes:false</GenerateNSwagCSharpOptions>
-    </ServiceProjectReference>
-    <ServiceProjectReference Include="../2.1.202/NETCORE_20/NETCORE_20.csproj">
-      <CodeGenerator>NSwagTypeScript</CodeGenerator>
-      <DocumentPath>NETCORE_20_TS.json</DocumentPath>
-    </ServiceProjectReference>
     <ServiceProjectReference Include="../2.1.302/NET_21/NET_21.csproj">
       <CodeGenerator>NSwagCSharp</CodeGenerator>
       <ClassName>NET_21</ClassName>

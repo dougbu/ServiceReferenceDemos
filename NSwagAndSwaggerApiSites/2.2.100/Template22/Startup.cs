@@ -22,16 +22,10 @@ namespace Template22
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var serializerSettings = new JsonSerializerSettings
-            {
-                Converters = { new StringEnumConverter() },
-            };
-
             services
-                .AddSwaggerDocument(settings => settings.SerializerSettings = serializerSettings)
+                .AddSwaggerDocument()
                 .AddSwaggerGen(options =>
                 {
-                    options.DescribeAllEnumsAsStrings();
                     options.SwaggerDoc(
                         "swashbuckleString",
                         new OpenApiInfo { Title = "swashbuckleString", Version = "v1" });
