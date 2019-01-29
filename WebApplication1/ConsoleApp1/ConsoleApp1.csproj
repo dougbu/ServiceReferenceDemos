@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Design" Version="12.5.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <ServiceProjectReference Include="..\WebApplication1\WebApplication1.csproj" CodeGenerator="NSwagCSharp" />
+    <ServiceProjectReference Include="..\WebApplication1\WebApplication1.csproj" CodeGenerator="NSwagTypeScript" DocumentPath="Foo.bar.json" />
+  </ItemGroup>
+
+</Project>
