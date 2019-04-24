@@ -10,6 +10,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.2" />
     <PackageReference Include="NSwag.AspNetCore" Version="12.5.10" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0-beta" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc2" />
   </ItemGroup>
+
+  <Target Name="OpenApiGetDocuments" Returns="@(_OpenApiProjectDocuments)">
+    <ItemGroup>
+      <_OpenApiProjectDocuments Include="NETCORE_21.json" />
+    </ItemGroup>
+  </Target>
 </Project>

@@ -5,14 +5,14 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="NSwag.ApiDescription.Design" Version="12.5.10">
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="12.5.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
 
-    <ServiceProjectReference Include="../2.2.100/Template22/Template22.csproj">
-      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
       <ClassName>FowlerIsAmazing</ClassName>
-    </ServiceProjectReference>
+    </OpenApiProjectReference>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 
 namespace ClientApp
 {
@@ -6,7 +7,7 @@ namespace ClientApp
     {
         static void Main(string[] args)
         {
-            var client = new FowlerIsAmazing("http://localhost");
+            var client = new FowlerIsAmazing("http://localhost", new HttpClient());
             Console.WriteLine("Hello World!");
         }
     }

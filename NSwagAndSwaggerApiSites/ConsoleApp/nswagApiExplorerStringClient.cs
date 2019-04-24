@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp
 {
-    public partial class Client
+    public partial class nswagApiExplorerStringClient
     {
         partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings)
         {
