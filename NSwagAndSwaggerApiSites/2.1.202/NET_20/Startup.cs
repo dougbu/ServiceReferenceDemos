@@ -42,7 +42,7 @@ namespace NET_20
             }
 
             app
-                .UseSwagger(settings => settings.PostProcess = null)
+                .UseOpenApi(settings => settings.PostProcess = null)
                 .UseSwagger(options => options.RouteTemplate = "{documentName}.json")
                 .Map("/basePath", application => application.UseMvc());
         }

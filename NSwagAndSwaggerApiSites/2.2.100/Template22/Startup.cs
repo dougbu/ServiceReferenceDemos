@@ -50,7 +50,7 @@ namespace Template22
 
             app
                 .UseHttpsRedirection()
-                .UseSwagger(settings => settings.PostProcess = null)
+                .UseOpenApi(settings => settings.PostProcess = null)
                 .UseSwagger(options => options.RouteTemplate = "/{documentName}.json");
         }
     }
