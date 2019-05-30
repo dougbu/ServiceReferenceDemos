@@ -10,7 +10,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <OpenApiProjectReference Include="..\WebApplication1\WebApplication1.csproj" CodeGenerator="NSwagCSharp" />
-    <OpenApiProjectReference Include="..\WebApplication1\WebApplication1.csproj" CodeGenerator="NSwagTypeScript" />
+    <OpenApiProjectReference Include="..\WebApplication1\WebApplication1.csproj" />
+    <OpenApiProjectReference Include="..\WebApplication1\WebApplication1.csproj">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+    </OpenApiProjectReference>
   </ItemGroup>
 </Project>
