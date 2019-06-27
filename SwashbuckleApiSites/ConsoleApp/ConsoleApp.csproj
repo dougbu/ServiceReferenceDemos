@@ -11,34 +11,37 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
 
-    <OpenApiReference Include="../2.1.202/NET_20/swashbuckleString.json" />
     <OpenApiReference Include="../2.1.202/NET_20/swashbuckleString.json">
+      <OutputPath>swashbuckleStringNet20.cs</OutputPath>
+      <Options>/GenerateDtoTypes:false</Options>
+    </OpenApiReference>
+    <OpenApiReference Include="../2.1.202/NET_20/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <OutputPath>SwashbuckleStringNet20.ts</OutputPath>
+    </OpenApiReference>
+    <OpenApiReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
+      <OutputPath>SwashbuckleString20.cs</OutputPath>
+      <Options>/GenerateDtoTypes:false</Options>
+    </OpenApiReference>
+    <OpenApiReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
       <OutputPath>SwashbuckleString20.ts</OutputPath>
     </OpenApiReference>
-    <OpenApiReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
-      <OutputPath>SwashbuckleStringCore20.cs</OutputPath>
+    <OpenApiReference Include="../2.1.302/NET_21/swashbuckleString.json">
+      <OutputPath>SwashbuckleStringNet21.cs</OutputPath>
       <Options>/GenerateDtoTypes:false</Options>
     </OpenApiReference>
-    <OpenApiReference Include="../2.1.202/NETCORE_20/swashbuckleString.json">
-      <CodeGenerator>NSwagTypeScript</CodeGenerator>
-      <OutputPath>SwashbuckleStringCore20.ts</OutputPath>
-    </OpenApiReference>
     <OpenApiReference Include="../2.1.302/NET_21/swashbuckleString.json">
+      <CodeGenerator>NSwagTypeScript</CodeGenerator>
+      <OutputPath>SwashbuckleStringNet21.ts</OutputPath>
+    </OpenApiReference>
+    <OpenApiReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
       <OutputPath>SwashbuckleString21.cs</OutputPath>
       <Options>/GenerateDtoTypes:false</Options>
     </OpenApiReference>
-    <OpenApiReference Include="../2.1.302/NET_21/swashbuckleString.json">
+    <OpenApiReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
       <OutputPath>SwashbuckleString21.ts</OutputPath>
-    </OpenApiReference>
-    <OpenApiReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
-      <OutputPath>SwashbuckleStringCore21.cs</OutputPath>
-      <Options>/GenerateDtoTypes:false</Options>
-    </OpenApiReference>
-    <OpenApiReference Include="../2.1.302/NETCORE_21/swashbuckleString.json">
-      <CodeGenerator>NSwagTypeScript</CodeGenerator>
-      <OutputPath>SwashbuckleStringCore21.ts</OutputPath>
     </OpenApiReference>
     <OpenApiReference Include="../2.1.302/Template21/swashbuckleString.json">
       <OutputPath>SwashbuckleStringTemplate21.cs</OutputPath>
@@ -62,13 +65,12 @@
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
     <OpenApiProjectReference Include="../2.1.302/Template21/Template21.csproj">
+      <Options>/GenerateDtoTypes:false</Options>
     </OpenApiProjectReference>
     <OpenApiProjectReference Include="../2.1.302/Template21/Template21.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
-    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
-      <Options>/GenerateDtoTypes:false</Options>
-    </OpenApiProjectReference>
+    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj" />
     <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>

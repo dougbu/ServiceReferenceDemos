@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp
 {
-    public partial class swashbuckleStringClient
+    public partial class SwashbuckleStringTemplate21
     {
         partial void UpdateJsonSerializerSettings(Newtonsoft.Json.JsonSerializerSettings settings)
         {
