@@ -8,7 +8,7 @@ namespace ConsoleApp
     {
         public static async Task Main(string[] args)
         {
-            var client = new nswagApiExplorerStringClient(new HttpClient())
+            var client = new NSwagApiExplorerStringTemplate21(new HttpClient())
             {
                 BaseUrl = "http://localhost:5000/basePath",
             };

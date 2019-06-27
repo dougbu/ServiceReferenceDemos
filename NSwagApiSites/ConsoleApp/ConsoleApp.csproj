@@ -70,9 +70,7 @@
     <OpenApiProjectReference Include="../2.1.302/Template21/Template21.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
-    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
-      <Options>/GenerateDtoTypes:false</Options>
-    </OpenApiProjectReference>
+    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj" />
     <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
