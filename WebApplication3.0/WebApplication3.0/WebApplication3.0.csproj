@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>WebApplication3._0</RootNamespace>
+    <OpenApiDocumentsDirectory>$(MSBuildProjectDirectory)</OpenApiDocumentsDirectory>
   </PropertyGroup>
 
   <ItemGroup>
