@@ -1,12 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>WebApplication3._0</RootNamespace>
     <OpenApiDocumentsDirectory>$(MSBuildProjectDirectory)</OpenApiDocumentsDirectory>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- KnownFrameworkReference Update="Microsoft.AspNetCore.App">
+      <LatestRuntimeFrameworkVersion>3.0.0-preview8.19375.7</LatestRuntimeFrameworkVersion>
+      <DefaultRuntimeFrameworkVersion>3.0.0-preview8.19375.7</DefaultRuntimeFrameworkVersion>
+    </KnownFrameworkReference -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview7.19365.7" />
     <PackageReference Include="NSwag.AspNetCore" Version="13.0.5" />
   </ItemGroup>
