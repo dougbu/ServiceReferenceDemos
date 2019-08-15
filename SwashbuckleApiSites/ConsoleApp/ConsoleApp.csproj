@@ -45,7 +45,6 @@
     </OpenApiReference>
     <OpenApiReference Include="../2.1.302/Template21/swashbuckleString.json">
       <OutputPath>SwashbuckleStringTemplate21.cs</OutputPath>
-      <Options>/GenerateDtoTypes:false</Options>
     </OpenApiReference>
     <OpenApiReference Include="../2.1.302/Template21/swashbuckleString.json">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
@@ -70,7 +69,9 @@
     <OpenApiProjectReference Include="../2.1.302/Template21/Template21.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
-    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj" />
+    <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
+      <Options>/ExcludedTypeNames:Model</Options>
+    </OpenApiProjectReference>
     <OpenApiProjectReference Include="../2.2.100/Template22/Template22.csproj">
       <CodeGenerator>NSwagTypeScript</CodeGenerator>
     </OpenApiProjectReference>
